@@ -1,8 +1,6 @@
 const path = require("path");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
-
-
 module.exports = {
   name: "Webpack-React-TypeScript-CSS-HTML", // 큰 의미는 없다.
   mode: "development", // 나중에 배포용으로는 production
@@ -23,7 +21,7 @@ module.exports = {
         options: {
           presets: [
             // 그 모듈에서 추가적으로 사용할 다른 옵션(프로그램)
-            "@babel/preset-env",
+            "@babel/preset-env", // 최신 문법 -> 모든 브라우저가 이해할 수 있는 문법
             "@babel/preset-react",
             "@babel/preset-typescript",
           ],
